@@ -4,5 +4,5 @@
     "url": "https://www.ratp.fr/groupe-ratp",
     "description": "Entreprise au top !",
     "configCommand": "commande_de_configuration",
-    "enabled": false
+    "enabled": true
 }
