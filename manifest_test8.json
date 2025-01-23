@@ -2,7 +2,7 @@
     "icon":"https://consultantsecteurtransports.github.io/TestExtension/Logo.png",
     "title": "Vidéo formation",
     "url": "https://consultantsecteurtransports.github.io/TestExtension/video1_html.html",
-    "description": "Description 8",
+    "description": "Description 9",
     "configCommand": "open_video_button",
     "enabled": false
 }
