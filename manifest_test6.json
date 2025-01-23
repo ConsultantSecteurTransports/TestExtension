@@ -1,8 +1,8 @@
 {
     "icon":"https://consultantsecteurtransports.github.io/TestExtension/Logo.png",
     "title": "Vidéo formation",
-    "url": "https://consultantsecteurtransports.github.io/TestExtension/vid%C3%A9otest2.mp4",
-    "description": "Description 4",
+    "url": "https://consultantsecteurtransports.github.io/TestExtension/video1.mp4",
+    "description": "Description 5",
     "configCommand": "open_video_button",
     "enabled": true
 }
