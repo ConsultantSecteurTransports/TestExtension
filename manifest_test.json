@@ -1,0 +1,8 @@
+{
+    "icon": "https://ratp.publispeak.com/brochure-institutionnelle-2019/uploads/297/7457c5a1129a0451cafd2c8156e91b3fcfa4cd16.png",
+    "title": "Site RATP",
+    "url": "https://www.ratp.fr/groupe-ratp",
+    "description": "Entreprise au top !",
+    "configCommand": "commande_de_configuration",
+    "enabled": false
+}
