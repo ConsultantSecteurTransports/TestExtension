@@ -4,5 +4,5 @@
     "url": "https://consultantsecteurtransports.github.io/TestExtension/video1.mp4",
     "description": "Description 5",
     "configCommand": "open_video_button",
-    "enabled": true
+    "enabled": false
 }
