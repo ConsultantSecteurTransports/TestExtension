@@ -1,6 +1,8 @@
 {
+    "icon":"https://consultantsecteurtransports.github.io/TestExtension/Logo.png",
     "title": "Un Site ",
     "url": "https://consultantsecteurtransports.github.io/TestExtension/Test_Imad.html",
-    "description": "Entreprise au top !!!",
+    "description": "Description 1",
+    "configCommand": "do_config",
     "enabled": true
 }
