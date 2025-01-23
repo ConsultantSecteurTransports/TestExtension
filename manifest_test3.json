@@ -3,6 +3,6 @@
     "title": "Un Site ",
     "url": "https://consultantsecteurtransports.github.io/TestExtension/vid%C3%A9otest.mp4",
     "description": "Description 3",
-    "configCommand": "do_config",
+    "configCommand": "open_video_button",
     "enabled": true
 }
