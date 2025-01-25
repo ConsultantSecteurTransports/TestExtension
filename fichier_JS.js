@@ -6,7 +6,7 @@
 
             // Gestion des événements de commande
             if (event === "command") {
-                if (data.command === "open_video_button") {
+                if (data.command === "open_menu) {
                     console.log("Commande reçue : Création du menu.");
 
                     // Configuration du menu principal
@@ -39,9 +39,6 @@
             }
         });
 
-        // Demande de jeton d'accès
-        const accessToken = await API.extension.requestPermission("accesstoken");
-        console.log("Jeton d'accès récupéré :", accessToken);
 
         console.log("Connexion avec l'API réussie !");
     } catch (error) {
