@@ -1,4 +1,4 @@
-(async () => {
+t(async () => {
     try {
         // "async" signifie que les opérations dans ton code peuvent être exécutées en arrière-plan 
         // sans bloquer l'exécution des autres instructions.
@@ -53,7 +53,7 @@
 
         // Appel de la méthode `setStatusMessage`
         const statusMessage = "Bienvenue dans l'extension de formation !";
-        API.ui.setStatusMessage(statusMessage);
+        API.extension.setStatusMessage(statusMessage);
         console.log("Message de statut défini :", statusMessage);
 
 
