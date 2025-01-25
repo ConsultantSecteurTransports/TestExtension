@@ -2,7 +2,7 @@
     try {
         // Connexion à l'API
         const API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
-            console.log("Event reçu :", event, data);
+            console.log("Event reçu !!! :", event, data);
 
             // Gestion des événements de commande
             if (event === "command") {
