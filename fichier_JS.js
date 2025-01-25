@@ -29,11 +29,11 @@
                     };
 
                     // Mise à jour du menu via l'API
-                    await API.ui.setMenu(mainMenuObject);
+                    API.ui.setMenu(mainMenuObject);
                     console.log("Menu principal configuré avec succès.");
 
                     // Mise à jour du sous-menu actif
-                    await API.ui.setActiveMenuItem("submenu_1_clicked");
+                    API.ui.setActiveMenuItem("submenu_1_clicked");
                     console.log("Sous-menu actif défini sur 'Vidéos'.");
                 }
             }
