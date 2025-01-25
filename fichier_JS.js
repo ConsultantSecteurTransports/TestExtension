@@ -22,7 +22,7 @@
                             },
                             {
                                 title: "PDF",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-pdf.png",
+                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/logo-pdf.png",
                                 command: "submenu_2_clicked",
                             },
                         ],
