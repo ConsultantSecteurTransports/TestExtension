@@ -28,16 +28,17 @@
                         ],
                     };
 
-                    // Mise à jour du menu via l'API
-                    API.ui.setMenu(mainMenuObject);
-                    console.log("Menu principal configuré avec succès.");
-
-                    // Mise à jour du sous-menu actif
-                    API.ui.setActiveMenuItem("submenu_1_clicked");
-                    console.log("Sous-menu actif défini sur 'Vidéos'.");
                 }
             }
         });
+
+                // Mise à jour du menu via l'API
+        API.ui.setMenu(mainMenuObject);
+        console.log("Menu principal configuré avec succès.");
+
+        // Mise à jour du sous-menu actif
+        API.ui.setActiveMenuItem("submenu_1_clicked");
+        console.log("Sous-menu actif défini sur 'Vidéos'.");
 
         // Demande de jeton d'accès
         const accessToken = await API.extension.requestPermission("accesstoken");
