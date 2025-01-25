@@ -1,47 +1,44 @@
 (async () => {
     try {
-        // Connexion à l'API
-        const API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
-            console.log("Event reçu !!! :", event, data);
-
-
-
-            
-            // Gestion des événements de commande
-            if (event === "command" && data.command === "open_menu") {
-                console.log("Commande reçue : Création du menu.");
-
-                // Configuration du menu principal
-                const mainMenuObject = {
-                    title: "Test extension app",
-                    icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                    command: "main_nav_menu_clicked",
-                    subMenus: [
-                        {
-                            title: "Vidéos",
-                            icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                            command: "submenu_1_clicked",
-                        },
-                        {
-                            title: "PDF",
-                            icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                            command: "submenu_2_clicked",
-                        },
-                    ],
-                };
-
-            }
+        var API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
+            console.log("Event: ", event, data);
         });
-        
-                // Mise à jour du menu via l'API
+        const mainMenuObject = {
+              title: "Test extension app",
+              icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+              command: "main_nav_menu_cliked",
+              subMenus: [
+                {
+                  title: "Vidéos",
+                  icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                  command: "submenu_1_clicked",
+                },
+                {
+                  title: "PDF",
+                  icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                  command: "submenu_2_clicked",
+                },
+              ],
+            };
+
+        // Updating the menu object.
         this.API.ui.setMenu(mainMenuObject);
-        console.log("Menu principal configuré avec succès.");
         
-        // Mise à jour du sous-menu actif
+        // Updating the active submenu.
         this.API.ui.setActiveMenuItem("submenu_1_clicked");
-        console.log("Sous-menu actif défini sur 'Vidéos'.");
         
-        console.log("Connexion avec l'API réussie !");
+        // Get the current project info
+        this.API.project.getCurrentProject().then((projectInfo: ConnectProject) => {
+            //Current project info: projectInfo.
+        });
+                API.project.getProject().then(project => {
+                    console.log(project); // Trimble Connect project details
+                });
+
+
+        console.log("Connexion avec l'API réussie !"); 
+
+        
     } catch (error) {
         console.error("Erreur lors de la connexion à l'API Trimble Connect :", error);
     }
