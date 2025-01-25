@@ -1,4 +1,4 @@
-t(async () => {
+(async () => {
     try {
         // "async" signifie que les opérations dans ton code peuvent être exécutées en arrière-plan 
         // sans bloquer l'exécution des autres instructions.
