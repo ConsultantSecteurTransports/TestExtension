@@ -34,7 +34,11 @@
                 API.project.getProject().then(project => {
                     console.log(project); // Trimble Connect project details
                 });
-
+        //Updating the status message.
+        this.API.extension.setStatusMessage("<statusMessage>:string");
+        //Request for the access token.
+        this.API.extension.requestPermission("accesstoken").then((accessToken: string) => {
+            //Current user access token or status: accessToken
 
         console.log("Connexion avec l'API réussie !"); 
 
