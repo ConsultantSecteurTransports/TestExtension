@@ -5,41 +5,37 @@
             console.log("Event reçu !!! :", event, data);
 
             // Gestion des événements de commande
-            if (event === "command") {
-                if (data.command === "open_menu") {
-                    console.log("Commande reçue : Création du menu.");
+            if (event === "command" && data.command === "open_menu") {
+                console.log("Commande reçue : Création du menu.");
 
-                    // Configuration du menu principal
-                    const mainMenuObject = {
-                        title: "Test extension app",
-                        icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                        command: "main_nav_menu_clicked",
-                        subMenus: [
-                            {
-                                title: "Vidéos",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                                command: "submenu_1_clicked",
-                            },
-                            {
-                                title: "PDF",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
-                                command: "submenu_2_clicked",
-                            },
-                        ],
-                    };
+                // Configuration du menu principal
+                const mainMenuObject = {
+                    title: "Test extension app",
+                    icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                    command: "main_nav_menu_clicked",
+                    subMenus: [
+                        {
+                            title: "Vidéos",
+                            icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                            command: "submenu_1_clicked",
+                        },
+                        {
+                            title: "PDF",
+                            icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                            command: "submenu_2_clicked",
+                        },
+                    ],
+                };
 
-                    // Mise à jour du menu via l'API
-                    API.ui.setMenu(mainMenuObject);
-                    console.log("Menu principal configuré avec succès.");
-                    
-                    // Mise à jour du sous-menu actif
-                    API.ui.setActiveMenuItem("submenu_1_clicked");
-                    console.log("Sous-menu actif défini sur 'Vidéos'.");
-
-                }
+                // Mise à jour du menu via l'API
+                API.ui.setMenu(mainMenuObject);
+                console.log("Menu principal configuré avec succès.");
+                
+                // Mise à jour du sous-menu actif
+                API.ui.setActiveMenuItem("submenu_1_clicked");
+                console.log("Sous-menu actif défini sur 'Vidéos'.");
             }
         });
-
 
         console.log("Connexion avec l'API réussie !");
     } catch (error) {
