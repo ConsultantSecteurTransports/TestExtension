@@ -3,10 +3,37 @@
         var API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
             console.log("Event: ", event, data);
         });
+        const mainMenuObject = {
+              title: "Test extension app",
+              icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+              command: "main_nav_menu_cliked",
+              subMenus: [
+                {
+                  title: "Vidéos",
+                  icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                  command: "submenu_1_clicked",
+                },
+                {
+                  title: "PDF",
+                  icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                  command: "submenu_2_clicked",
+                },
+              ],
+            };
+
+        // Updating the menu object.
+        this.API.ui.setMenu(mainMenuObject);
         
-        API.project.getProject().then(project => {
-            console.log(project); // Trimble Connect project details
+        // Updating the active submenu.
+        this.API.ui.setActiveMenuItem("submenu_1_clicked");
+        
+        // Get the current project info
+        this.API.project.getCurrentProject().then((projectInfo: ConnectProject) => {
+            //Current project info: projectInfo.
         });
+                API.project.getProject().then(project => {
+                    console.log(project); // Trimble Connect project details
+                });
 
 
         console.log("Connexion avec l'API réussie !"); 
