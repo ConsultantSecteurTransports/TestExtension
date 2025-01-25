@@ -6,7 +6,7 @@
 
             // Gestion des événements pour "extension.command"
             if (event === "extension.command") {
-                if (data.data === "open_menu") {
+                if (data.data === "open_menu") {  //Attention, il faut recupere data dans date !
                     console.log("Commande reçue : Création du menu.");
 
                     // Configuration du menu principal
