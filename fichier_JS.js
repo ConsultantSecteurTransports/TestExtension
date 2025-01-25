@@ -1,28 +1,28 @@
 (async () => {
     try {
         // Connexion à l'API
-        const API = await TrimbleConnectWorkspace.connect(window.parent, async (event, data) => {
+        const API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
             console.log("Event reçu !!! :", event, data);
 
             // Gestion des événements de commande
             if (event === "command") {
-                if (data.command === "open_menu") {
+                if (data.command === "open_video_button") {
                     console.log("Commande reçue : Création du menu.");
 
                     // Configuration du menu principal
                     const mainMenuObject = {
                         title: "Test extension app",
-                        icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/logo-formation.png",
+                        icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
                         command: "main_nav_menu_clicked",
                         subMenus: [
                             {
                                 title: "Vidéos",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/logo-video.png",
+                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
                                 command: "submenu_1_clicked",
                             },
                             {
                                 title: "PDF",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/logo-pdf.png",
+                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
                                 command: "submenu_2_clicked",
                             },
                         ],
