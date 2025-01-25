@@ -14,7 +14,7 @@
                 }
 
                 //Premier sous-menu
-                if (data.command === "submenu_1_clicked") {
+                if (data.data === "submenu_1_clicked") {
                     console.log("Sous-menu 1' sélectionné !! ");
 
                     // Scroller vers la div spécifique
@@ -28,7 +28,7 @@
                 }
                 
                 //Deuxième sous-menu
-                if (data.command === "submenu_2_clicked") {
+                if (data.data === "submenu_2_clicked") {
                     console.log("Sous-menu 2' sélectionné !! ");
 
                     // Scroller vers la div spécifique
