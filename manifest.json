@@ -3,6 +3,6 @@
     "title": "Supports formation",
     "url": "https://consultantsecteurtransports.github.io/TestExtension/fichier_html.html",
     "description": "Nouvelle extensions pour heberger les supports formation",
-    "configCommand": "open_video_button",
+    "configCommand": "open_menu",
     "enabled": false
 }
