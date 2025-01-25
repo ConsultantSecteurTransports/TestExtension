@@ -12,6 +12,34 @@ t(async () => {
                 if (data.data === "open_menu") {  //Attention, il faut recupere data dans date !
                     console.log("Commande reçue : Création du menu.");
                 }
+
+                //Premier sous-menu
+                if (data.command === "submenu_1_clicked") {
+                    console.log("Sous-menu 1' sélectionné !! ");
+
+                    // Scroller vers la div spécifique
+                    const targetDiv = document.getElementById("content"); // Remplace par l'ID de ta div
+                    if (targetDiv) {
+                        targetDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+                        console.log("Scrolled to 'videosSection'.");
+                    } else {
+                        console.warn("Div 'videosSection' introuvable.");
+                    }
+                }
+                
+                //Deuxième sous-menu
+                if (data.command === "submenu_2_clicked") {
+                    console.log("Sous-menu 2' sélectionné !! ");
+
+                    // Scroller vers la div spécifique
+                    const targetDiv = document.getElementById("pdf-content"); // Remplace par l'ID de ta div
+                    if (targetDiv) {
+                        targetDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+                        console.log("Scrolled to 'videosSection'.");
+                    } else {
+                        console.warn("Div 'videosSection' introuvable.");
+                    }
+                }
             }
         });
 
