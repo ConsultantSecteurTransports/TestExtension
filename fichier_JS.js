@@ -27,13 +27,10 @@
         // Updating the active submenu.
         this.API.ui.setActiveMenuItem("submenu_1_clicked");
         
-        // Get the current project info
-        this.API.project.getCurrentProject().then((projectInfo: ConnectProject) => {
-            //Current project info: projectInfo.
+
+        API.project.getProject().then(project => {
+            console.log(project); // Trimble Connect project details
         });
-                API.project.getProject().then(project => {
-                    console.log(project); // Trimble Connect project details
-                });
         //Updating the status message.
         this.API.extension.setStatusMessage("<statusMessage>:string");
         //Request for the access token.
