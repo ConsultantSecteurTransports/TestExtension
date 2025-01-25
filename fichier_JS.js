@@ -11,18 +11,18 @@
 
                     // Configuration du menu principal
                     const mainMenuObject = {
-                        title: "Test extension app",
+                        title: "Supports de formation",
                         icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
                         command: "main_nav_menu_clicked",
                         subMenus: [
                             {
                                 title: "Videos",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-video.png",
                                 command: "submenu_1_clicked",
                             },
                             {
                                 title: "PDF",
-                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+                                icon: "https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-pdf.png",
                                 command: "submenu_2_clicked",
                             },
                         ],
