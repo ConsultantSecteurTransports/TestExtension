@@ -6,7 +6,7 @@
 
             // Gestion des événements de commande
             if (event === "command") {
-                if (data.command === "open_video_button") {
+                if (data.command === "open_menu") {
                     console.log("Commande reçue : Création du menu.");
 
                     // Configuration du menu principal
