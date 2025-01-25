@@ -43,6 +43,21 @@
         //API.ui.setActiveMenuItem("submenu_1_clicked");
         //console.log("Sous-menu actif défini sur 'Vidéos'.");
 
+        // Appel de la méthode `getCurrentProject`
+        const currentProject = await API.project.getCurrentProject();
+        console.log("Projet actuel récupéré :", currentProject);
+
+        // Appel de la méthode `getUserSettings`
+        const userSettings = await API.user.getUserSettings();
+        console.log("Paramètres utilisateur récupérés :", userSettings);
+
+        // Appel de la méthode `setStatusMessage`
+        const statusMessage = "Bienvenue dans l'extension de formation !";
+        API.ui.setStatusMessage(statusMessage);
+        console.log("Message de statut défini :", statusMessage);
+
+
+        
         // Demande de jeton d'accès
         const accessToken = await API.extension.requestPermission("accesstoken");
         console.log("Jeton d'accès récupéré :", accessToken);
