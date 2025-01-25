@@ -79,6 +79,35 @@
         a:hover {
             color: #005a9e;
         }
+
+         #pdf-content ul {
+        list-style-type: none; /* Supprime les puces */
+        padding: 0;
+    }
+
+    #pdf-content li {
+        margin-bottom: 10px; /* Espacement entre les lignes */
+        display: flex;
+        align-items: center; /* Aligne l'image et le texte verticalement */
+    }
+
+    #pdf-content .icon {
+        width: 20px; /* Taille de l'icône */
+        height: 20px;
+        margin-right: 10px; /* Espacement entre l'icône et le texte */
+    }
+
+    #pdf-content a {
+        color: #0078d4;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    #pdf-content a:hover {
+        color: #005a9e;
+        text-decoration: underline;
+    }
     </style>
 </head>
 
@@ -87,28 +116,39 @@
 
     <div id="content">
         <h1>Support de formation vidéos</h1>
-        <p>Une vidéo hébergée sur GitHub Pages :</p>
-        <video controls autoplay>
-            <source src="https://consultantsecteurtransports.github.io/TestExtension/Vidéos/video1_MP4.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
+            <p>Profil consomateur</p>
+            <video controls autoplay>
+                <source src="https://consultantsecteurtransports.github.io/TestExtension/Vidéos/video1_MP4.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture des vidéos.
+            </video>
     </div>
 
 
     <div id="pdf-content">
-        <h1>Supports de formation en version  PDF</h1>
+        <h1>Supports de formation en version PDF</h1>
         <p>Veuillez cliquer sur les liens ci-dessous pour ouvrir les supports PDF :</p>
-        <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Consommateurs_v2.1.pdf" download>
-            Support formation Consommateurs
-        </a>
-        <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Coordinateurs_v2.1.pdf" download>
-            Support formation Coordinateurs
-        </a>
-        <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Produteurs_v2.1.pdf" download>
-            Support formation Producteurs
-        </a>
-
+            <ul>
+                <li>
+                    <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Consommateur_PNG.png" alt="Icone support" class="icon">
+                    <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Consommateurs_v2.1.pdf" download>
+                        Support formation Consommateurs
+                    </a>
+                </li>
+                <li>
+                    <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Coordinateur_PNG.png" alt="Icone support" class="icon">
+                    <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Coordinateurs_v2.1.pdf" download>
+                        Support formation Coordinateurs
+                    </a>
+                </li>
+                <li>
+                    <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Producteur_PNG.png" alt="Icone support" class="icon">
+                    <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Produteurs_v2.1.pdf" download>
+                        Support formation Producteurs
+                    </a>
+                </li>
+            </ul>
     </div>
+
 
     <!-- Inclusion de l'API Trimble Connect -->
     <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
