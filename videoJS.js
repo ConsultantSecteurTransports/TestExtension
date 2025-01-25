@@ -12,3 +12,4 @@
         console.error("Erreur lors de la connexion à l'API Trimble Connect :", error);
     }
 })();
+
