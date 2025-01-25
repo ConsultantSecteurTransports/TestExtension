@@ -4,6 +4,9 @@
         const API = await TrimbleConnectWorkspace.connect(window.parent, (event, data) => {
             console.log("Event reçu !!! :", event, data);
 
+
+
+            
             // Gestion des événements de commande
             if (event === "command" && data.command === "open_menu") {
                 console.log("Commande reçue : Création du menu.");
