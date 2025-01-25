@@ -40,8 +40,8 @@
         console.log("Menu principal configuré avec succès.");
 
         // Mise à jour du sous-menu actif
-        API.ui.setActiveMenuItem("submenu_1_clicked");
-        console.log("Sous-menu actif défini sur 'Vidéos'.");
+        //API.ui.setActiveMenuItem("submenu_1_clicked");
+        //console.log("Sous-menu actif défini sur 'Vidéos'.");
 
         // Demande de jeton d'accès
         const accessToken = await API.extension.requestPermission("accesstoken");
