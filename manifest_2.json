@@ -1,0 +1,8 @@
+{
+    "icon":"https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
+    "title": "Supports formation",
+    "url": "https://consultantsecteurtransports.github.io/TestExtension/fichier_html.html",
+    "description": "Nouvelle extension pour heberger les supports de formation",
+    "configCommand": "open_menu",
+    "enabled": true
+}
