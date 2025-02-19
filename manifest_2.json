@@ -1,7 +1,7 @@
 {
     "icon":"https://consultantsecteurtransports.github.io/TestExtension/Logos/Logo-formation.png",
     "title": "Supports formation",
-    "url": "https://consultantsecteurtransports.github.io/TestExtension/fichier_html.html",
+    "url": "https://servcc.sharepoint.com/:u:/r/sites/-SYNERGIE2025-GED/SitePages/test.aspx?csf=1&web=1&e=lhsw1P",
     "description": "Nouvelle extension pour heberger les supports de formation",
     "configCommand": "open_menu",
     "enabled": true
