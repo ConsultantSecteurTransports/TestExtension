@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vidéo et PDF RATP</title>
+    <title>Vidéo et PDF</title>
     <style>
         body {
             margin: 0;
@@ -124,74 +124,12 @@
     <div id="content">
         <h1>Support de formation vidéos</h1>
         <p>Profil consomateur</p>
-        <video controls autoplay>
-            <source src="https://consultantsecteurtransports.github.io/TestExtension/Vidéos/video1_MP4.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
+        <button onclick="window.open('https://servcc-my.sharepoint.com/personal/imad_bouhmouch_ratp_fr/_layouts/15/embed.aspx?UniqueId=80669b45-ec31-42f8-af58-13342cb53a73', '_blank')">
+    Ouvrir la vidéo dans un nouvel onglet
+</button>
 
-        <p>Test Sharepoint iframe</p>
-        <iframe
-            src="https://servcc-my.sharepoint.com/personal/imad_bouhmouch_ratp_fr/_layouts/15/embed.aspx?UniqueId=80669b45-ec31-42f8-af58-13342cb53a73&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-            width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video1_MP4_2.mp4">
-        </iframe>
-
-
-        <p>Test Sharepoint</p>
-        <video controls autoplay>
-            <source
-                src="https://servcc-my.sharepoint.com/:v:/r/personal/imad_bouhmouch_ratp_fr/Documents/00%20-%20RATP/01%20-%20SOCLE%20TECHNIQUE%20BIM/01-ECD/03-API/REPERTOIRE%20RATP/video1_MP4_2.mp4?csf=1&web=1&e=FHaUXb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
-
-
-        <p>Profil Producteur</p>
-        <video controls autoplay>
-            <source src="https://consultantsecteurtransports.github.io/TestExtension/Vidéos/video2_MP4.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
-
-        <p>Profil Coordinateur</p>
-        <video controls autoplay>
-            <source src="https://consultantsecteurtransports.github.io/TestExtension/Vidéos/video3_MP4.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
     </div>
 
-
-    <div id="pdf-content">
-        <h1>Supports de formation en version PDF</h1>
-        <p>Veuillez cliquer sur les liens ci-dessous pour ouvrir les supports PDF :</p>
-        <ul>
-            <li>
-                <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Consommateur_PNG.png"
-                    alt="Icone support" class="icon">
-                <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Consommateurs_v2.1.pdf"
-                    download>
-                    Support formation Consommateurs
-                </a>
-            </li>
-            <li>
-                <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Coordinateur_PNG.png"
-                    alt="Icone support" class="icon">
-                <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Coordinateurs_v2.1.pdf"
-                    download>
-                    Support formation Coordinateurs
-                </a>
-            </li>
-            <li>
-                <img src="https://consultantsecteurtransports.github.io/TestExtension/Logos/Producteur_PNG.png"
-                    alt="Icone support" class="icon">
-                <a href="https://consultantsecteurtransports.github.io/TestExtension/Pdf/RATP-BIM_Support-Formation_Produteurs_v2.1.pdf"
-                    download>
-                    Support formation Producteurs
-                </a>
-            </li>
-        </ul>
-    </div>
 
 
     <!-- Inclusion de l'API Trimble Connect -->
